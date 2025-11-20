@@ -18,4 +18,9 @@ public class Task{
     public void setId(int id){this.id = id;}
     public void setTitle(String title){this.title = title;}
     public void setDescription(String description){this.description = description;}
+
+    @Override
+    public String toString() {
+        return "Task " + id + ": " + title + '\n' + description + '\n';
+    }
 }
